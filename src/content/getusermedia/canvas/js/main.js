@@ -23,7 +23,9 @@ button.onclick = function() {
 
 const constraints = {
   audio: false,
-  video: true
+  video: video: {
+        facingMode: 'environment', // Or 'user'
+    },
 };
 
 function handleSuccess(stream) {
